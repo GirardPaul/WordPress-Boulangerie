@@ -1,0 +1,709 @@
+/*
+Theme Name: Boulangerie
+Author: Paul GIRARD
+Description: Boulangerie
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+/* Général */
+@font-face {
+    font-family: 'Carefus Normal', Arial, Helvetica, sans-serif;
+    src: url("fonts/CaferusNormal.otf") format("otf");
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+.font {
+    font-family: "Caferus Normal";
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+.carousel-item > img
+{
+    height: 100vh !important;
+}
+
+.logo-bakery {
+    width: 250px;
+    height: 87px;
+}
+
+.text-brown {
+    color: #422E1A;
+}
+
+.rem2 {
+    font-size: 2rem;
+}
+
+/* HEADER */
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-logo {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    z-index: 1000;
+}
+.pos-logo > img
+{
+    width: 15rem !important;
+    height: 15rem !important;
+    max-width: initial !important;
+    border-radius: 50%;
+    margin-top: -28px;
+}
+
+.pos-adress {
+    position: absolute;
+    top: 6rem;
+    left: 20rem;
+    z-index: 1000;
+    color: white;
+    font-size: 1.8rem;
+    width: auto;
+}
+
+.pos-phone {
+    position: absolute;
+    top: 9rem;
+    left: 41rem;
+    z-index: 1000;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.list-nav {
+    list-style: none;
+    font-family: "Caferus Normal";
+    display: flex !important;
+}
+.nav-header > ul{
+    display: flex;
+}
+.menu-item{
+    padding: 20px !important;
+}
+
+.list-style a {
+    color: white;
+}
+
+.pos-menu {
+    position: absolute;
+    top: 6rem;
+    right: -5rem;
+    z-index: 1000;
+    color: white;
+    font-size: 2.4rem;
+}
+
+.pos-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 900;
+    color: white;
+}
+
+.slogan {
+    font-size: 7vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.white-space {
+    white-space: nowrap;
+}
+
+/* SECTION SERVICES + PRESENTATION */
+.verbar {
+    display: none;
+}
+
+.background2 {
+    background: url("images/slide-1.jpg") no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.icone {
+    width: 130px;
+    height: 130px;
+}
+
+.circles {
+    background-color: #E2A644;
+    /* background-color: #C67A00; */
+}
+
+.font-size-25 {
+    font-size: 1.5rem;
+}
+
+.mw-200 {
+    max-width: 200px;
+}
+
+.background3 {
+    padding: 20px;
+}
+
+.bar {
+    margin: 40px;
+}
+
+.description {
+    margin: 20px;
+    width: 50%;
+}
+
+.pad-5 {
+    padding-top: 6rem !important;
+}
+
+/* SECTION PRESTATIONS */
+.boulangerie-h2:before,
+.boulangerie-h2:after {
+    content: "";
+    position: relative;
+    top: 0;
+    width: 20vw;
+    overflow: hidden;
+    height: 50px;
+    display: inline-block;
+    background: url(images/vibration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+
+.boulangerie-h2:after {
+    margin-left: 30px;
+}
+
+.prestations-h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 60px !important;
+}
+
+.prestations {
+    background-image: url("images/galette-bg.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.galette {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 196px;
+    width: 967px;
+}
+
+.orange {
+    color: rgb(251, 87, 2);
+    font-size: 3rem;
+}
+
+.marron {
+    color: rgb(102, 59, 16);
+    font-size: 3rem;
+}
+
+/* FOOTER */
+/* colors */
+.bg-brown-light {
+    background: #5B4024;
+}
+
+.bg-brown {
+    background: #422E1A;
+}
+
+.bg-brown-dark {
+    background: #312213;
+}
+
+.img-fluid {
+    width: calc(100vw/6);
+}
+
+.font-helvetica {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.font-size-21 {
+    font-size: 1.3rem;
+}
+
+.text-yellow {
+    color: #eeb574;
+}
+
+.mt-30 {
+    margin-top: 1.875rem;
+}
+
+.mb-66 {
+    margin-bottom: 4.125rem;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+    .slogan {
+        font-size: 9vw;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    .slogan {
+        font-size: 9vw;
+    }
+    .boulangerie-h2:before, .boulangerie-h2:after {
+        width: 17vw !important;
+    }
+
+    .font-size-21 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item {
+        display: none !important;
+    }
+
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .marron {
+        font-size: 2.5rem;
+    }
+
+    .galette {
+        width: 85%;
+    }
+    .size-img {
+        width: calc(100vw/3) !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .slogan {
+        font-size: 14vw;
+    }
+
+    .pos-logo{
+        top: 2.75rem;
+        left: -2rem;
+    }
+    .pos-adress {
+        top: 4.75rem !important;
+    left: 21rem !important;
+    }
+    .pos-phone {
+        top: 12.75rem !important;
+    left: 21rem !important;
+    }
+    .boulangerie-h2::before,
+    .boulangerie-h2::after {
+        display: none;
+    }
+    .pos-phone {
+        top: 15rem;
+        left: 20rem;
+    }
+    /* .img-fluid {
+        width: calc(100vw/3) !important;
+        height: 100% !important;
+    } */
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .description {
+        text-align: center !important;
+        width: 75%;
+    }
+    .presta-produit > img {
+        width: calc(100vw/6) !important;
+        padding-bottom: 1.5rem !important;
+        border-radius: 50% !important;
+        height: 100% !important;
+        }
+    .pos-adress {
+        top: 5rem !important;
+        left: 9.5rem !important;
+        font-size: 1.1rem !important;
+    }
+    .pos-phone {
+        top: 10rem !important;
+        left: 9.6rem !important;
+        font-size: 1.1rem !important;
+    }
+    .pos-logo > img{
+        width: 7.5rem !important;
+        height: 7.5rem !important;
+    }
+    .pos-logo{
+        top: 3.75rem;
+        left: 0;
+    }
+
+    .size-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .orange,
+    .marron {
+        font-size: 2rem !important;
+    }
+
+    .margin-r5 {
+        margin-right: 5rem;
+    }
+
+    .margin-r2 {
+        margin-right: 2.5rem;
+    }
+
+    .pos-adress {
+        top: 4rem;
+        left: 13rem;
+        font-size: 1.3rem;
+    }
+
+    .pos-phone {
+        top: 10rem;
+        left: 13rem;
+        font-size: 1.3rem;
+    }
+
+    .carousel-item {
+        display: none !important;
+    }
+
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .img-fluid {
+        width: 100px;
+        height: 100px;
+        max-width: unset;
+    }
+
+    .galette {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .logo-bakery {
+        width: 250px;
+        height: 87px;
+    }
+    h2 {
+        font-size: 3rem !important;
+    }
+
+    .orange,
+    .marron {
+        font-size: 1.5rem !important;
+    }
+
+    footer .col-6 {
+        flex: 0 0 0 70% !important;
+        flex-basis: 70% !important;
+        max-width: 70% !important;
+    }
+
+}
+
+
+
+@font-face {
+    font-family: 'Carefus Normal';
+    src: url("fonts/CaferusNormal.otf") format("otf");
+}
+
+.checkInput {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+.check {
+    visibility: hidden;
+    position: fixed;
+    top: 2rem;
+    right: 13%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 20000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bgc {
+    position: fixed;
+    top: 7rem;
+    right: 19%;
+    width: 5rem;
+    height: 5rem;
+    transform: scale(0);
+    border-radius: 50%;
+    background-color: #422E1A;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 1s cubic-bezier(.97,-0.17,.01,1.08);
+
+}
+.checkInput:checked ~ .bgc {
+    visibility: visible;
+    transform: scale(100);
+}
+
+.check span {
+    /* display: block; */
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: .3rem 0;
+    transition: all .5s;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    /* box-shadow: 5px 5px 3px 1px rgb(0,0,0); */
+}
+.check .span-menu {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    font-size: 2rem;
+    color: white;
+    /* text-shadow: 13px 6px 1px rgba(0, 0, 0, 1); */
+}
+
+.checkInput:checked ~ .check .span-1  {
+    transform: rotate(-405deg) translateY(.5rem);
+    position: absolute;
+    top: 1.8rem;
+    left: 0.9rem;
+}
+.checkInput:checked ~ .check .span-2  {
+  display: none;
+}
+.checkInput:checked ~ .check .span-3  {
+    transform: rotate(405deg) translateY(-.6rem);
+    position: absolute;
+    top: 2.6rem;
+    left: 0.9rem;
+}
+
+.nav-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1500;
+    transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+.checkInput:checked ~ .nav-style {
+    visibility: visible;
+    opacity: 1;
+}
+.list-style {
+    list-style: none;
+}
+
+.link-style {
+    font-family: "Caferus Normal";
+    opacity: 0.8;
+    text-decoration: none;
+    font-size: 5rem;
+    color: #fff;
+    margin: 1rem 0;
+    background-image: linear-gradient(-120deg, transparent 50%, #fff 50%);
+    background-size: 223%;
+    background-position: 100%;
+    padding: 2rem 2rem 0rem 2rem;
+    transition: all .4s ease;
+}
+
+.link-style:hover {
+    opacity: 1;
+    color: #4f0e1a;
+    text-decoration: none;
+    background-position: 181%;
+}
+
+.hidden-bgc {
+    visibility: hidden;
+    transform: scale(0);
+}
+.li-style {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.ppp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    .check {
+        visibility: visible;
+        top: 7rem;
+        right: 10%;
+    }
+    .bgc {
+        position: fixed;
+        top: 7rem;
+        right: 10%;
+    }
+    .pos-menu {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .check {
+        visibility: visible;
+        top: 7rem;
+        right: 7%;
+    }
+    .bgc {
+        position: fixed;
+        top: 7rem;
+        right: 7%;
+    }
+    .pos-menu {
+        visibility: hidden;
+    }
+    iframe{
+        width: 500px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .check {
+        visibility: visible;
+        top: 7rem;
+        right: 7%;
+    }
+    .bgc {
+        position: fixed;
+        top: 7rem;
+        right: 7%;
+    }
+    .pos-menu {
+        visibility: hidden;
+    }
+    .span-menu {
+        visibility: hidden;
+    }
+    
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    
+    .check {
+        visibility: visible;
+        top: 6rem;
+        right: 8%;
+    }
+    .bgc {
+        position: fixed;
+        top: 6rem;
+        right: 8%;
+    }
+    .pos-menu {
+        visibility: hidden;
+    }
+    .span-menu {
+        visibility: hidden;
+    }
+    .logo-responsive > img{
+      width: 75px;
+    }
+    .logo-responsive{
+        width: 75px;
+
+    }
+}
+
+.presta-produit > img{
+    width: calc(100vw/6) !important;
+padding-bottom: 1.5rem !important;
+border-radius: 50% !important;
+height: 100% !important;
+}
+
+.img-footer > img{
+    width: calc(100vw/6) !important;
+    height: 100% !important;
+}
+.logo-footer > img{
+    width: 250px !important;
+    height: 87px !important;
+}
+.horaires-div > div{
+  margin: 0;
+}
